@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RAItemDetailsView" customModule="Retail_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgc-EA-n70">
+                    <rect key="frame" x="0.0" y="167" width="375" height="500"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOE-ud-HSL">
+                            <rect key="frame" x="30" y="30" width="315" height="315"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zOE-ud-HSL" secondAttribute="height" multiplier="1:1" id="WSv-iz-xkk"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m7F-nz-6gA">
+                            <rect key="frame" x="20" y="380" width="230" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8RW-k9-w6z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGX-vF-Wta">
+                            <rect key="frame" x="255" y="380" width="100" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="pcQ-s0-5Mz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoC-qS-gRc">
+                            <rect key="frame" x="30" y="440" width="315" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="LCW-Wy-zW4"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="didTapCartButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="ctf-Qh-R6G"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VGX-vF-Wta" firstAttribute="top" secondItem="zOE-ud-HSL" secondAttribute="bottom" constant="35" id="CXv-PG-WGq"/>
+                        <constraint firstItem="zOE-ud-HSL" firstAttribute="top" secondItem="Cgc-EA-n70" secondAttribute="top" constant="30" id="Eiy-H9-nJj"/>
+                        <constraint firstItem="m7F-nz-6gA" firstAttribute="top" secondItem="zOE-ud-HSL" secondAttribute="bottom" constant="35" id="LSx-I1-za5"/>
+                        <constraint firstAttribute="trailing" secondItem="VGX-vF-Wta" secondAttribute="trailing" constant="20" id="MSP-ls-4uN"/>
+                        <constraint firstItem="HoC-qS-gRc" firstAttribute="top" secondItem="m7F-nz-6gA" secondAttribute="bottom" constant="20" id="PYC-Qd-Rwq"/>
+                        <constraint firstAttribute="bottom" secondItem="HoC-qS-gRc" secondAttribute="bottom" constant="20" id="VLx-lv-omF"/>
+                        <constraint firstAttribute="trailing" secondItem="HoC-qS-gRc" secondAttribute="trailing" constant="30" id="dlc-1f-BDF"/>
+                        <constraint firstItem="HoC-qS-gRc" firstAttribute="leading" secondItem="Cgc-EA-n70" secondAttribute="leading" constant="30" id="dtC-9d-ZY3"/>
+                        <constraint firstItem="zOE-ud-HSL" firstAttribute="leading" secondItem="Cgc-EA-n70" secondAttribute="leading" constant="30" id="dyD-Z2-tLF"/>
+                        <constraint firstItem="VGX-vF-Wta" firstAttribute="height" secondItem="m7F-nz-6gA" secondAttribute="height" id="e53-tQ-Jg5"/>
+                        <constraint firstAttribute="trailing" secondItem="zOE-ud-HSL" secondAttribute="trailing" constant="30" id="ikW-Mw-iPh"/>
+                        <constraint firstItem="VGX-vF-Wta" firstAttribute="leading" secondItem="m7F-nz-6gA" secondAttribute="trailing" constant="5" id="mEc-Yi-lvI"/>
+                        <constraint firstItem="m7F-nz-6gA" firstAttribute="leading" secondItem="Cgc-EA-n70" secondAttribute="leading" constant="20" id="tbK-f4-fHg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cgc-EA-n70" secondAttribute="trailing" id="9Mq-p5-grA"/>
+                <constraint firstItem="Cgc-EA-n70" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CjC-9b-Osp"/>
+                <constraint firstAttribute="bottom" secondItem="Cgc-EA-n70" secondAttribute="bottom" id="Hnk-1o-NPj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnCart" destination="HoC-qS-gRc" id="QfK-Jb-ji4"/>
+                <outlet property="contentView" destination="Cgc-EA-n70" id="Zkh-fY-EGs"/>
+                <outlet property="imgItem" destination="zOE-ud-HSL" id="MXh-dR-hrS"/>
+                <outlet property="lblItemName" destination="m7F-nz-6gA" id="1Pn-0E-9bW"/>
+                <outlet property="lblItemPrice" destination="VGX-vF-Wta" id="zkb-Dl-ZKn"/>
+                <outlet property="lcContentViewBottomSpace" destination="Hnk-1o-NPj" id="kn7-1h-w2V"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RALandingController" customModule="Retail_App" customModuleProvider="target">
+            <connections>
+                <outlet property="btnEmail" destination="EWn-da-Mii" id="rey-Et-1zY"/>
+                <outlet property="btnFacebook" destination="Tdh-Fi-gby" id="IIs-DH-1yo"/>
+                <outlet property="btnInfo" destination="CaK-Rj-265" id="t9H-Vy-hCX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oz9-Vr-VCG" customClass="GradientView" customModule="Retail_App" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" red="0.047058823530000002" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="midColor">
+                            <color key="value" red="0.12549019610000001" green="0.89019607840000003" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" red="0.16078431369999999" green="1" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IZ-09-1Z5" userLabel="headerView">
+                    <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaK-Rj-265">
+                            <rect key="frame" x="305" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="1R1-bi-svI"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapInfoButton:" destination="-1" eventType="touchUpInside" id="m23-OU-PKh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cey-eD-fyP">
+                            <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Ucj-9x-ni6"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                            <state key="normal" image="Close_Icon"/>
+                            <connections>
+                                <action selector="closePage" destination="-1" eventType="touchUpInside" id="bVn-Xu-T4w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Kdo-08-lXt"/>
+                        <constraint firstItem="uay-LD-7Yc" firstAttribute="bottom" secondItem="cey-eD-fyP" secondAttribute="bottom" id="M9G-u6-HM4"/>
+                        <constraint firstItem="uay-LD-7Yc" firstAttribute="trailing" secondItem="CaK-Rj-265" secondAttribute="trailing" constant="20" id="Mxb-uV-vmc"/>
+                        <constraint firstItem="CaK-Rj-265" firstAttribute="top" secondItem="uay-LD-7Yc" secondAttribute="top" id="OJ8-BR-v0L"/>
+                        <constraint firstItem="cey-eD-fyP" firstAttribute="leading" secondItem="uay-LD-7Yc" secondAttribute="leading" constant="20" id="Wcg-fK-huR"/>
+                        <constraint firstItem="cey-eD-fyP" firstAttribute="top" secondItem="uay-LD-7Yc" secondAttribute="top" id="mTe-pB-IO1"/>
+                        <constraint firstItem="uay-LD-7Yc" firstAttribute="bottom" secondItem="CaK-Rj-265" secondAttribute="bottom" id="tDi-B7-O4U"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="uay-LD-7Yc"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFI-Xj-xH3" userLabel="buttonsbaseView">
+                    <rect key="frame" x="30" y="346" width="315" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-Fi-gby">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
+                            <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MXN-mP-LtP"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="28" maxY="0.0"/>
+                            <state key="normal" title="Connect with Facebook" image="Facebook_Icon">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="connectuser:" destination="-1" eventType="touchUpInside" id="fV6-cD-Wxv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWn-da-Mii">
+                            <rect key="frame" x="0.0" y="70" width="315" height="50"/>
+                            <color key="backgroundColor" red="0.85882352941176465" green="0.26666666666666666" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="C1d-BF-0po"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="28" maxY="0.0"/>
+                            <state key="normal" title="Connect with Email" image="Email_Icon"/>
+                            <connections>
+                                <action selector="connectuser:" destination="-1" eventType="touchUpInside" id="BdB-XS-dxN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Tdh-Fi-gby" firstAttribute="leading" secondItem="gFI-Xj-xH3" secondAttribute="leading" id="6IF-Rc-nap"/>
+                        <constraint firstAttribute="height" constant="120" id="Ju3-v8-eo7"/>
+                        <constraint firstAttribute="trailing" secondItem="EWn-da-Mii" secondAttribute="trailing" id="RiV-62-sBC"/>
+                        <constraint firstItem="EWn-da-Mii" firstAttribute="leading" secondItem="gFI-Xj-xH3" secondAttribute="leading" id="aWc-Qb-bNT"/>
+                        <constraint firstAttribute="bottom" secondItem="EWn-da-Mii" secondAttribute="bottom" id="fv5-Ae-rEj"/>
+                        <constraint firstItem="Tdh-Fi-gby" firstAttribute="top" secondItem="gFI-Xj-xH3" secondAttribute="top" id="jhq-4l-HGl"/>
+                        <constraint firstAttribute="trailing" secondItem="Tdh-Fi-gby" secondAttribute="trailing" id="n7z-Qm-4g9"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="2GF-fk-yzZ">
+                    <rect key="frame" x="123" y="210.33333333333334" width="128" height="105.66666666666666"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="ckA-3x-fcU"/>
+                        <constraint firstAttribute="width" secondItem="2GF-fk-yzZ" secondAttribute="height" multiplier="40:33" id="dOn-Hn-Yyn"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Oz9-Vr-VCG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0H8-gF-Ix7"/>
+                <constraint firstAttribute="bottom" secondItem="Oz9-Vr-VCG" secondAttribute="bottom" id="8pI-r2-VWR"/>
+                <constraint firstItem="gFI-Xj-xH3" firstAttribute="top" secondItem="2GF-fk-yzZ" secondAttribute="bottom" constant="30" id="Dpa-sa-A06"/>
+                <constraint firstItem="gFI-Xj-xH3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="QMy-Ld-oKb"/>
+                <constraint firstItem="gFI-Xj-xH3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QXe-b3-oHD"/>
+                <constraint firstItem="4IZ-09-1Z5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="U8r-3M-cXW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gFI-Xj-xH3" secondAttribute="trailing" constant="30" id="UR6-yH-ZNG"/>
+                <constraint firstItem="2GF-fk-yzZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jr6-FD-JAJ"/>
+                <constraint firstAttribute="trailing" secondItem="Oz9-Vr-VCG" secondAttribute="trailing" id="t3B-no-2Cd"/>
+                <constraint firstItem="Oz9-Vr-VCG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uGc-e6-x02"/>
+                <constraint firstItem="4IZ-09-1Z5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xKn-01-EHI"/>
+                <constraint firstItem="4IZ-09-1Z5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zln-DW-eJa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="117.5" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="App_Icon" width="128" height="99"/>
+        <image name="Close_Icon" width="512" height="512"/>
+        <image name="Email_Icon" width="34" height="28"/>
+        <image name="Facebook_Icon" width="15" height="28"/>
+    </resources>
+</document>
